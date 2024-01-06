@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap');
+
 
 :root {
     --mainColor: #1b1b1b;
     --darkenColor: #0a0a0a;
     --accent: #b3b3b3;
-    --purple: #491163;
+    --purple: #63113e;
+    --magenta: #e90a84;
     --purpleDarken: #2d0b3d;
   }
 
 html{
     scroll-behavior: smooth;
+    background-color: var(--mainColor);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 body{
@@ -50,7 +52,7 @@ header .info-text{
 header .info-text h1{
     font-size: 5rem;
     font-weight: 600;
-    font-family: 'Nunito', sans-serif;
+    font-family: system-ui, sans-serif;
     color: aliceblue;
 }
 
@@ -179,7 +181,7 @@ header .info-text .scroll::before{
     color: var(--accent);
     font-size: 1.7rem;
     font-weight: bold;
-    font-family: 'Nunito', sans-serif;
+    font-family: system-ui, sans-serif;
 }
 
 #about .card:hover .info h1, #features .card:hover .info h1{
@@ -187,8 +189,18 @@ header .info-text .scroll::before{
     color: #fff;
     font-size: 1.7rem;
     font-weight: bold;
-    font-family: 'Nunito', sans-serif;
+    font-family: system-ui, sans-serif;
 }
+
+#about .card:hover .info h1 {
+    color: var(--magenta);
+
+}
+
+#about .card:hover .info span{
+    color: var(--purpleDarken);
+}
+
 
 #about .card .info p, #features .card .info p{
     color: #ccc;
@@ -201,8 +213,9 @@ header .info-text .scroll::before{
 
 
 #features .card .info p span{
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: var(--accent);
+    font-size: 1.2rem;
+    font-style: oblique;
 }
 
 #features .card span{
