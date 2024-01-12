@@ -158,7 +158,7 @@ header .info-text .scroll::before{
 }
 
 #about .card:hover, #features .card:hover{
-    border-color: var(--purple);
+    border-color: var(--magenta);
     background-color: var(--purpleDarken);
     box-shadow: none;
 }
@@ -186,7 +186,7 @@ header .info-text .scroll::before{
 
 #about .card:hover .info h1, #features .card:hover .info h1{
     margin-bottom: 20px;
-    color: #fff;
+    color: --var(--magenta);
     font-size: 1.7rem;
     font-weight: bold;
     font-family: system-ui, sans-serif;
@@ -209,8 +209,6 @@ header .info-text .scroll::before{
     align-self: center;
     text-align: center;
 }
-
-
 
 #features .card .info p span{
     -webkit-text-fill-color: var(--accent);
@@ -259,6 +257,10 @@ header .info-text .scroll::before{
 
 #features .feature-cards .card .info h1{
     text-align: center;
+}
+
+#features .feature-cards .card:hover .info h1{
+    color: var(--magenta);
 }
 
 #features .feature-cards .card .info p{
